@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function helloUser() {
+                document.getElementById("helloHeader").innerHTML = "Hello " + (document.getElementById("name").value == "" ? "Hacker" : document.getElementById("name").value)
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <label>Enter your name</label>
+            <input type="text" id="name">
+            <button type="button" onclick="helloUser()">Hello</button>
+        </form>
+        <h1 id="helloHeader">Hello Guest</h1>
+    </body>
+
+</html>
+
+
